@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>LMS for 38th Batch</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="row navigation-bar col-lg-12">
+				<div class="topBar col-lg-10 margin10px marginBottom20px">
+					<h4>Download Lecture Notes and Educational Materials | LMS for 38<sup>th</sup></h4>
+					<p>Powered By www.the38th.com</p>
+				</div>
+				<div class="col-lg-2">
+					<p><a class="btn btn-outline-warning" href="upload/index.php">Upload</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="browse-notes col-lg-12">
+
+				<form action="downloadProcess.php" method="post" id="browse-notes">
+					<div class="row col-lg-12 margin10px">
+						<div class="col-lg-3">
+							<p>Select Subject</p>
+						</div>
+						<div class="col-lg-9">
+							<select name="Subject" id="Subject" class="form-control">
+								<option value="Notice">Special Notices</option>
+								<option value="Maths">Maths</option>
+								<option value="aMaths">Applied Maths</option>
+								<option value="Cs">Cs</option>
+								<option value="Phy">Physics</option>
+								<option value="Chem">Chemistry</option>
+								<option value="Zoo">Zoology</option>
+								<option value="Bot">Botany</option>
+							</select>
+						</div>
+					</div>
+					<div class="row col-lg-12 margin10px">
+						<div class="col-lg-3">
+							<p>Select Year</p>
+						</div>
+						<div class="col-lg-9">
+							<select name="Year" id="Year" class="form-control">
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+								<option value="2016">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+							</select>
+						</div>
+					</div>
+					<div class="row col-lg-12 margin10px">
+						<div class="col-lg-3">
+							<p>Select Level</p>
+						</div>
+						<div class="col-lg-9">
+							<select name="Level" id="Level" class="form-control">
+								<option value="faculty">All Students</option>
+								<option value="level1">Level 1</option>
+								<option value="level2">Level 2</option>
+								<option value="level3">Level 3</option>
+							</select>
+						</div>
+					</div>
+					<div class="row col-lg-12 margin10px">
+						<div class="col-lg-3">
+							<p>Select Semester</p>
+						</div>
+						<div class="col-lg-9">
+							<select name="Semester" id="Semester" class="form-control">
+								<option value="sem1">Semester 1</option>
+								<option value="sem2">Semester 2</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row col-lg-12 margin10px">
+						<div class="col-lg-4">
+
+						</div>
+						<div class="col-lg-4 margin10px">
+							<button type="button" name="submitSearch" id="submitSearch" class="btn btn-primary fullWidthButton">Submit</button>
+						</div>
+						<div class="col-lg-4 margin10px">
+							<button type="reset" name="resetSearch" id="resetSearch" class="btn btn-danger fullWidthButton">Reset</button>
+						</div>
+					</div>
+				</form>
+			</div> <!--browse-notes-->
+			<div class="row">
+				<div class="download-files col-lg-12 hiddenDiv margin10px" id="download-files">
+					<table class="table table-responsive" >
+						<thead>
+							<th>File Name</th>
+							<th>Link</th>
+							<!--<th>No of Downloads</th>-->
+						</thead>
+						<tbody id="files">
+						</tbody>
+						<tfoot></tfoot>
+					</table>
+				</div> <!--download-files-->
+			</div>
+
+		</div>
+	</div><!--container-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/editClass.js"></script>
+	<!--<script src="js/loadFiles.js"></script>-->
+	<script src="js/submitData.js"></script>
+</body>
+</html>

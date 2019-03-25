@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    padding-bottom: 20px;
+}
+.margin10px{
+    margin-top: 10px;
+}
+.marginBottom20px{
+    margin-bottom: 20px;
+}
+.fullWidthButton{
+    width: 100%;
+}
+.hiddenDiv{
+    display: none;
+    clear: both;
+}
+.unhideDiv{
+    display: block;
+}
+.active{
+    font-weight: bold;
+    font-size: 20px;
+}
+.redFonts{
+    color: red;
+}
+.tinyFonts{
+    font-size: 12px;
+}
+.topBar{
+    color: white;
+}
+/* navigation bar styles*/
+
+.navigation-bar{
+    background-image: url(../images/menu-low.jpg);
+    padding-top: 10px;
+}
+.navigation{
+    display: inline-block;
+    float: left;
+}
+.navigation ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.navigation ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.navigation ul li a:hover{
+    transition-duration: 500ms;
+    transition-property: color;
+    color:red;
+}
+.user-login{
+    float: right;
+}
+.user-login ul li{
+    list-style-type: none;
+}
+.user-login ul li a{
+    text-decoration: none;
+    color: white;
+}
+.user-login ul li a:hover{
+    transition-duration: 500ms;
+    transition-property: color;
+    color:red;
+}
+/* navigation bar styles*/
+
+/*browse-notes div styles*/
+
+/*browse-notes div styles*/
+
+/*download-files div styles*/
+table th{
+    width: 800px;
+    height: 100px;
+}
+/*download-files div styles*/
+
+/*upload-files div styles*/
+
+/*upload-files div styles*/
+.login{
+    margin: 100px auto;
+    width: 350px;
+}
+.login h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.login button{
+    margin-top: 20px;
+    width: 100%;
+}
+p{
+    margin-bottom: 15px;
+}
+.login p.error{
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.login p.info{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+@media all and (max-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+}
